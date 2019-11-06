@@ -1,5 +1,7 @@
 # flutter_ebook
 
+[![Build Status](https://travis-ci.com/iptton/hongxiu.svg?branch=master)](https://travis-ci.com/iptton/hongxiu)
+
 A new Flutter project.
 
 ## Getting Started
