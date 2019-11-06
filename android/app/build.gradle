@@ -64,7 +64,7 @@ android {
             // signingConfig signingConfigs.debug
             signingConfig signingConfigs.release
             minifyEnabled true
-            useProguard true
+            useProguard false // firebase_admob 没处理好 progurad 临时注释
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
 
         }
