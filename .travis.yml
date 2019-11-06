@@ -72,8 +72,8 @@ matrix:
       before_script:
         - pip2 install six
         - brew update
+        - brew install --HEAD usbmuxd
         - brew install --HEAD libimobiledevice
-        - brew install --HEAD ideviceinstaller
         - brew install ios-deploy
         - git clone https://github.com/flutter/flutter.git -b stable --depth 1
       script:
