@@ -23,7 +23,7 @@ matrix:
             - libstdc++6
             - fonts-droid-fallback
       before_script:
-        - git clone https://github.com/flutter/flutter.git -b alpha --depth 1
+        - git clone https://github.com/flutter/flutter.git -b stable --depth 1
       script:
         - ./flutter/bin/flutter test
 
@@ -62,7 +62,6 @@ matrix:
         - export PATH=$GRADLE_HOME/bin:$PATH
         - git clone https://github.com/flutter/flutter.git -b stable --depth 1
       script:
-        - ./flutter/bin/flutter test
         - ./flutter/bin/flutter -v build apk --target-platform android-arm,android-arm64
           --split-per-abi
 
@@ -77,7 +76,7 @@ matrix:
         - brew install --HEAD libimobiledevice
         - brew install ideviceinstaller
         - brew install ios-deploy
-        - git clone https://github.com/flutter/flutter.git -b alpha --depth 1
+        - git clone https://github.com/flutter/flutter.git -b stable --depth 1
       script:
         - ./flutter/bin/flutter -v build ios --no-codesign
 
