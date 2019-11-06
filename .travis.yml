@@ -4,9 +4,9 @@ matrix:
   fast_finish: true
 
   # Building APK/IPA takes a long time; do not wait for them to finish.
-  allow_failures:
-    - env: JOB=APK
-    - env: JOB=IPA
+#  allow_failures:
+#    - env: JOB=APK
+#    - env: JOB=IPA
 
   include:
     # Runs unit tests without emulators.
@@ -21,7 +21,7 @@ matrix:
             - ubuntu-toolchain-r-test # if we don't specify this, the libstdc++6 we get is the wrong version
           packages:
             - libstdc++6
-            - fonts-droid-fallback
+            - fonts-droid
       before_script:
         - git clone https://github.com/flutter/flutter.git -b stable --depth 1
       script:
